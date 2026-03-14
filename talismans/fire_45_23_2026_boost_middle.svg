@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 1170 2532">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1c0c0c" />
+      <stop offset="50%" stop-color="#2e1414" />
+      <stop offset="100%" stop-color="#1a0a0a" />
+    </linearGradient>
+    <radialGradient id="glow-top" cx="50%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="rgba(239, 83, 80, 0.1)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="glow-center" cx="50%" cy="38%" r="40%">
+      <stop offset="0%" stop-color="rgba(239, 83, 80, 0.2)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="glow-bottom" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="rgba(239, 83, 80, 0.1)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <linearGradient id="border-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef5350" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ef5350" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ef5350" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="line-h" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef5350" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ef5350" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#ef5350" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ef5350" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1170" height="2532" fill="url(#bg)" />
+
+  <!-- Ambient glows -->
+  <ellipse cx="585" cy="450" rx="500" ry="400" fill="url(#glow-top)" />
+  <ellipse cx="585" cy="960" rx="380" ry="320" fill="url(#glow-center)" />
+  <ellipse cx="585" cy="2150" rx="450" ry="350" fill="url(#glow-bottom)" />
+
+  <!-- Subtle border -->
+  <rect x="40" y="40" width="1090" height="2452" fill="none" stroke="url(#border-gradient)" stroke-width="1.5" rx="44" />
+
+  <!-- Top decorative line -->
+  <line x1="200" y1="120" x2="970" y2="120" stroke="url(#line-h)" stroke-width="1" />
+
+  <!-- Header -->
+  <text x="585" y="200" font-size="18" letter-spacing="0.5em" text-anchor="middle" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">FORTUNE TALISMAN</text>
+  <text x="585" y="290" font-size="68" text-anchor="middle" fill="#ffebee" font-family="serif" opacity="0.9">發顯符</text>
+  <text x="585" y="345" font-size="28" text-anchor="middle" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">발현부 · 화 기운 보강</text>
+
+  <!-- Decorative line -->
+  <line x1="340" y1="400" x2="830" y2="400" stroke="url(#line-h)" stroke-width="1" />
+
+  <!-- Central element character -->
+  <circle cx="585" cy="680" r="200" fill="none" stroke="#ef5350" stroke-opacity="0.06" stroke-width="1" />
+  <circle cx="585" cy="680" r="150" fill="none" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <circle cx="585" cy="680" r="100" fill="none" stroke="#ef5350" stroke-opacity="0.04" stroke-width="1" />
+  <text x="585" y="720" font-size="200" text-anchor="middle" fill="#ef5350" font-family="serif" opacity="0.85">火</text>
+
+  <!-- Mantra -->
+  <text x="585" y="890" font-size="42" text-anchor="middle" fill="#ffebee" font-family="serif" letter-spacing="0.15em" opacity="0.9">明朗火氣</text>
+
+  <!-- Decorative line -->
+  <line x1="250" y1="960" x2="920" y2="960" stroke="url(#line-h)" stroke-width="1" />
+
+  <!-- Core message -->
+  <text x="585" y="1080" font-size="72" text-anchor="middle" fill="#ffebee" font-family="serif" letter-spacing="0.2em" opacity="0.88">守 心 定 氣</text>
+  <text x="585" y="1150" font-size="32" text-anchor="middle" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">표현력과 추진력, 생기 회복을 돕는 흐름</text>
+
+  <!-- Decorative line -->
+  <line x1="300" y1="1230" x2="870" y2="1230" stroke="url(#line-h)" stroke-width="1" />
+
+  <!-- Info section - card style boxes -->
+  <rect x="120" y="1300" width="930" height="160" rx="20" fill="#ef5350" fill-opacity="0.04" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1370" font-size="20" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif" letter-spacing="0.2em">DAY PILLAR</text>
+  <text x="180" y="1425" font-size="46" fill="#ffebee" font-family="serif">己酉</text>
+  <text x="990" y="1425" font-size="30" text-anchor="end" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">기유</text>
+
+  <rect x="120" y="1500" width="930" height="160" rx="20" fill="#ef5350" fill-opacity="0.04" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1570" font-size="20" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif" letter-spacing="0.2em">FAVORABLE</text>
+  <text x="180" y="1625" font-size="46" fill="#ef5350" font-family="serif">火</text>
+  <text x="990" y="1625" font-size="30" text-anchor="end" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">화 기운</text>
+
+  <rect x="120" y="1700" width="450" height="160" rx="20" fill="#ef5350" fill-opacity="0.04" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1770" font-size="20" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif" letter-spacing="0.2em">TODAY</text>
+  <text x="180" y="1825" font-size="46" fill="#ffebee" font-family="serif">丁亥</text>
+
+  <rect x="600" y="1700" width="450" height="160" rx="20" fill="#ef5350" fill-opacity="0.04" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <text x="660" y="1770" font-size="20" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif" letter-spacing="0.2em">FLOW</text>
+  <text x="660" y="1825" font-size="34" fill="#ef5350" font-family="sans-serif">길운 증폭</text>
+
+  <rect x="120" y="1900" width="930" height="160" rx="20" fill="#ef5350" fill-opacity="0.04" stroke="#ef5350" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1970" font-size="20" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif" letter-spacing="0.2em">ANNUAL</text>
+  <text x="180" y="2025" font-size="46" fill="#ffebee" font-family="serif">丙午</text>
+  <text x="990" y="2025" font-size="30" text-anchor="end" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">2026년 흐름 조율</text>
+
+  <!-- Bottom section -->
+  <line x1="300" y1="2140" x2="870" y2="2140" stroke="url(#line-h)" stroke-width="1" />
+
+  <text x="585" y="2230" font-size="36" text-anchor="middle" fill="#ffebee" font-family="serif" letter-spacing="0.15em" opacity="0.85">心和則氣和 氣和則運開</text>
+  <text x="585" y="2285" font-size="22" text-anchor="middle" fill="rgba(239, 83, 80, 0.7)" font-family="sans-serif">마음이 고르면 기운이 고르고, 기운이 고르면 운이 열린다</text>
+
+  <!-- Seal -->
+  <circle cx="585" cy="2390" r="65" fill="none" stroke="#ef5350" stroke-opacity="0.25" stroke-width="1.5" />
+  <text x="585" y="2400" font-size="36" text-anchor="middle" fill="#ef5350" font-family="serif" opacity="0.7">사주풀이</text>
+
+  <!-- Bottom decorative line -->
+  <line x1="200" y1="2480" x2="970" y2="2480" stroke="url(#line-h)" stroke-width="1" />
+</svg>
