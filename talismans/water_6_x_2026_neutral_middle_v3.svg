@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 1170 2532">
+
+  <!-- Flat background -->
+  <rect width="1170" height="2532" fill="#121e34" />
+
+  <!-- Border -->
+  <rect x="40" y="40" width="1090" height="2452" fill="none" stroke="#42a5f5" stroke-opacity="0.12" stroke-width="1" rx="44" />
+
+  <!-- Top line -->
+  <line x1="280" y1="120" x2="890" y2="120" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Header -->
+  <text x="585" y="200" font-size="18" letter-spacing="0.5em" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">FORTUNE TALISMAN</text>
+  <text x="585" y="290" font-size="68" text-anchor="middle" fill="#e3f2fd" font-family="serif">淨化符</text>
+  <text x="585" y="345" font-size="28" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">정화부 · 수 기운 보강</text>
+
+  <!-- Divider -->
+  <line x1="380" y1="400" x2="790" y2="400" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Central element character -->
+  <text x="585" y="720" font-size="200" text-anchor="middle" fill="#42a5f5" font-family="serif" opacity="0.85">水</text>
+
+  <!-- Mantra -->
+  <text x="585" y="890" font-size="42" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.15em">深流水氣</text>
+
+  <!-- Divider -->
+  <line x1="320" y1="960" x2="850" y2="960" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Core message -->
+  <text x="585" y="1080" font-size="72" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.2em">守 心 定 氣</text>
+  <text x="585" y="1150" font-size="32" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">통찰력과 정서 순환, 내면 안정에 맞는 흐름</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="1230" x2="830" y2="1230" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Info cards -->
+  <rect x="120" y="1300" width="930" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1370" font-size="20" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif" letter-spacing="0.2em">DAY PILLAR</text>
+  <text x="180" y="1425" font-size="46" fill="#e3f2fd" font-family="serif">庚午</text>
+  <text x="990" y="1425" font-size="30" text-anchor="end" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">경오</text>
+
+  <rect x="120" y="1500" width="930" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1570" font-size="20" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif" letter-spacing="0.2em">FAVORABLE</text>
+  <text x="180" y="1625" font-size="46" fill="#42a5f5" font-family="serif">水</text>
+  <text x="990" y="1625" font-size="30" text-anchor="end" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">수 기운</text>
+
+  <rect x="120" y="1700" width="450" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1770" font-size="20" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif" letter-spacing="0.2em">TODAY</text>
+  <text x="180" y="1825" font-size="46" fill="#e3f2fd" font-family="serif">-</text>
+
+  <rect x="600" y="1700" width="450" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <text x="660" y="1770" font-size="20" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif" letter-spacing="0.2em">FLOW</text>
+  <text x="660" y="1825" font-size="34" fill="#42a5f5" font-family="sans-serif">호흡 조율</text>
+
+  <rect x="120" y="1900" width="930" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <text x="180" y="1970" font-size="20" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif" letter-spacing="0.2em">ANNUAL</text>
+  <text x="180" y="2025" font-size="46" fill="#e3f2fd" font-family="serif">丙午</text>
+  <text x="990" y="2025" font-size="30" text-anchor="end" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">2026년 흐름 조율</text>
+
+  <!-- Bottom divider -->
+  <line x1="340" y1="2140" x2="830" y2="2140" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+
+  <text x="585" y="2230" font-size="36" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.15em" opacity="0.85">心和則氣和 氣和則運開</text>
+  <text x="585" y="2285" font-size="22" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">마음이 고르면 기운이 고르고, 기운이 고르면 운이 열린다</text>
+
+  <!-- Seal -->
+  <circle cx="585" cy="2390" r="65" fill="none" stroke="#42a5f5" stroke-opacity="0.2" stroke-width="1" />
+  <text x="585" y="2400" font-size="36" text-anchor="middle" fill="#42a5f5" font-family="serif" opacity="0.7">사주풀이</text>
+
+  <!-- Bottom line -->
+  <line x1="280" y1="2480" x2="890" y2="2480" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+</svg>
