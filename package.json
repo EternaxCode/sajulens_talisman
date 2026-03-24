@@ -1,0 +1,13 @@
+{
+  "name": "sajulens-talisman",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Talisman SVG assets for the Sajulens app",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "build": "node scripts/validate-svg.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

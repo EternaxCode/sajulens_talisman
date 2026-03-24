@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sajulens Talisman Gallery</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0c10;
+      color: #c8d0d8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      padding: 40px 24px 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #7a8a9a;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #4a5568;
+      letter-spacing: 0.1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .card:hover .preview {
+      border-color: rgba(100, 140, 200, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .preview {
+      width: 100%;
+      aspect-ratio: 1170 / 2532;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+      background: #111820;
+    }
+
+    .preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .label {
+      font-size: 11px;
+      color: #4a5a6a;
+      letter-spacing: 0.05em;
+      text-align: center;
+      word-break: break-all;
+      line-height: 1.8;
+    }
+
+    .badges {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+    .badge-water  { background: rgba(66,165,245,0.12); color: #64b5f6; }
+    .badge-metal  { background: rgba(176,190,197,0.12); color: #b0bec5; }
+    .badge-fire   { background: rgba(239,83,80,0.12);  color: #ef9a9a; }
+    .badge-v3     { background: rgba(100,200,120,0.12); color: #81c784; }
+    .badge-v2     { background: rgba(200,180,100,0.12); color: #ffd54f; }
+    .badge-v1     { background: rgba(150,120,220,0.12); color: #b39ddb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talisman Gallery</h1>
+    <p>sajulens-talisman · click to open SVG</p>
+  </header>
+
+  <div class="grid" id="grid"></div>
+
+  <script>
+    const talismans = [
+      { file: 'fire_45_23_2026_boost_middle.svg',     element: 'fire',  version: 'v1' },
+      { file: 'water_6_25_2026_caution_middle_v2.svg', element: 'water', version: 'v2' },
+      { file: 'water_6_x_2026_neutral_middle.svg',    element: 'water', version: 'v1' },
+      { file: 'water_6_26_2026_clash_middle_v3.svg',  element: 'water', version: 'v3' },
+      { file: 'water_6_x_2026_neutral_middle_v3.svg', element: 'water', version: 'v3' },
+      { file: 'water_20_26_2026_clash_young_v3.svg',  element: 'water', version: 'v3' },
+      { file: 'water_27_26_2026_clash_young_v3.svg',  element: 'water', version: 'v3' },
+      { file: 'metal_54_25_2026_clash_middle_v3.svg', element: 'metal', version: 'v3' },
+      { file: 'metal_18_27_2026_boost_middle_v3.svg', element: 'metal', version: 'v3' },
+    ];
+
+    const grid = document.getElementById('grid');
+
+    talismans.forEach(({ file, element, version }) => {
+      const href = 'talismans/' + file;
+
+      const a = document.createElement('a');
+      a.className = 'card';
+      a.href = href;
+      a.target = '_blank';
+      a.rel = 'noopener';
+
+      const preview = document.createElement('div');
+      preview.className = 'preview';
+
+      const img = document.createElement('img');
+      img.src = href;
+      img.alt = file;
+      img.loading = 'lazy';
+      preview.appendChild(img);
+
+      const label = document.createElement('div');
+      label.className = 'label';
+
+      const nameText = document.createTextNode(file.replace('.svg', ''));
+      label.appendChild(nameText);
+
+      const badges = document.createElement('div');
+      badges.className = 'badges';
+
+      const b1 = document.createElement('span');
+      b1.className = 'badge badge-' + element;
+      b1.textContent = element;
+
+      const b2 = document.createElement('span');
+      b2.className = 'badge badge-' + version;
+      b2.textContent = version;
+
+      badges.appendChild(b1);
+      badges.appendChild(b2);
+      label.appendChild(badges);
+
+      a.appendChild(preview);
+      a.appendChild(label);
+      grid.appendChild(a);
+    });
+  </script>
+</body>
+</html>
