@@ -6,6 +6,7 @@
 import { readFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { XMLValidator, XMLParser } from 'fast-xml-parser';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const talismanDir = join(__dirname, '..', 'talismans');
@@ -17,31 +18,48 @@ if (files.length === 0) {
   process.exit(1);
 }
 
+const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });
+
 let errors = 0;
 
 for (const file of files) {
   const filePath = join(talismanDir, file);
   const content = readFileSync(filePath, 'utf8');
 
-  // Check for XML declaration or SVG root tag
+  // Fast guard: must start with <svg or <?xml
   if (!content.trim().startsWith('<svg') && !content.trim().startsWith('<?xml')) {
     console.error(`FAIL ${file}: does not start with <svg or <?xml`);
     errors++;
     continue;
   }
 
-  // Check balanced tags (simple heuristic for critical tags)
-  const opens = (content.match(/<svg[^>]*>/g) || []).length;
-  const closes = (content.match(/<\/svg>/g) || []).length;
-  if (opens !== closes || opens === 0) {
-    console.error(`FAIL ${file}: mismatched <svg> tags (open=${opens}, close=${closes})`);
+  // Well-formed XML check
+  const valid = XMLValidator.validate(content);
+  if (valid !== true) {
+    console.error(`FAIL ${file}: XML parse error - ${valid.err.msg} (line ${valid.err.line})`);
     errors++;
     continue;
   }
 
-  // Check required SVG attributes
-  if (!content.includes('xmlns="http://www.w3.org/2000/svg"')) {
-    console.error(`FAIL ${file}: missing xmlns attribute`);
+  // SVG structure check: root element and xmlns
+  let parsed;
+  try {
+    parsed = parser.parse(content);
+  } catch (e) {
+    console.error(`FAIL ${file}: XML parse error - ${e.message}`);
+    errors++;
+    continue;
+  }
+
+  if (!parsed.svg) {
+    console.error(`FAIL ${file}: root element is not <svg>`);
+    errors++;
+    continue;
+  }
+
+  const xmlns = parsed.svg['@_xmlns'];
+  if (xmlns !== 'http://www.w3.org/2000/svg') {
+    console.error(`FAIL ${file}: missing xmlns="http://www.w3.org/2000/svg"`);
     errors++;
     continue;
   }
