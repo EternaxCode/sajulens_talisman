@@ -1,13 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 1170 2532">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#0a1020" />
+      <stop offset="50%" stop-color="#121e34" />
+      <stop offset="100%" stop-color="#080c18" />
+    </linearGradient>
+    <linearGradient id="border-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#42a5f5" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#42a5f5" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#42a5f5" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="line-h" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#42a5f5" stop-opacity="0" />
+      <stop offset="30%" stop-color="#42a5f5" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#42a5f5" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#42a5f5" stop-opacity="0" />
+    </linearGradient>
+  </defs>
 
-  <!-- Flat background -->
-  <rect width="1170" height="2532" fill="#121e34" />
+  <!-- Background -->
+  <rect width="1170" height="2532" fill="url(#bg)" />
 
-  <!-- Border -->
-  <rect x="40" y="40" width="1090" height="2452" fill="none" stroke="#42a5f5" stroke-opacity="0.12" stroke-width="1" rx="44" />
+  <!-- Ambient glows (solid fill for flutter_svg compatibility) -->
+  <ellipse cx="585" cy="450" rx="500" ry="400" fill="rgb(66,165,245)" opacity="0.07" />
+  <ellipse cx="585" cy="960" rx="380" ry="320" fill="rgb(66,165,245)" opacity="0.09" />
+  <ellipse cx="585" cy="2150" rx="450" ry="350" fill="rgb(66,165,245)" opacity="0.06" />
+
+  <!-- Subtle border -->
+  <rect x="40" y="40" width="1090" height="2452" fill="none" stroke="url(#border-gradient)" stroke-width="1.5" rx="44" />
 
   <!-- Top line -->
-  <line x1="280" y1="120" x2="890" y2="120" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="280" y1="120" x2="890" y2="120" stroke="url(#line-h)" stroke-width="1" />
 
   <!-- Header -->
   <text x="585" y="200" font-size="18" letter-spacing="0.5em" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">FORTUNE TALISMAN</text>
@@ -15,23 +38,26 @@
   <text x="585" y="345" font-size="28" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">정화부 · 수 기운 보강</text>
 
   <!-- Divider -->
-  <line x1="380" y1="400" x2="790" y2="400" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="380" y1="400" x2="790" y2="400" stroke="url(#line-h)" stroke-width="1" />
 
   <!-- Central element character -->
+  <circle cx="585" cy="680" r="200" fill="none" stroke="#42a5f5" stroke-opacity="0.06" stroke-width="1" />
+  <circle cx="585" cy="680" r="150" fill="none" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
+  <circle cx="585" cy="680" r="100" fill="none" stroke="#42a5f5" stroke-opacity="0.04" stroke-width="1" />
   <text x="585" y="720" font-size="200" text-anchor="middle" fill="#42a5f5" font-family="serif" opacity="0.85">水</text>
 
   <!-- Mantra -->
   <text x="585" y="890" font-size="42" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.15em">深流水氣</text>
 
   <!-- Divider -->
-  <line x1="320" y1="960" x2="850" y2="960" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="320" y1="960" x2="850" y2="960" stroke="url(#line-h)" stroke-width="1" />
 
   <!-- Core message -->
-  <text x="585" y="1080" font-size="72" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.2em">守 心 定 氣</text>
+  <text x="585" y="1080" font-size="72" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.2em" opacity="0.88">守 心 定 氣</text>
   <text x="585" y="1150" font-size="32" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">통찰력과 정서 순환, 내면 안정에 맞는 흐름</text>
 
   <!-- Divider -->
-  <line x1="340" y1="1230" x2="830" y2="1230" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="340" y1="1230" x2="830" y2="1230" stroke="url(#line-h)" stroke-width="1" />
 
   <!-- Info cards -->
   <rect x="120" y="1300" width="930" height="160" rx="20" fill="#42a5f5" fill-opacity="0.04" stroke="#42a5f5" stroke-opacity="0.1" stroke-width="1" />
@@ -58,7 +84,7 @@
   <text x="990" y="2025" font-size="30" text-anchor="end" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">2026년 흐름 조율</text>
 
   <!-- Bottom divider -->
-  <line x1="340" y1="2140" x2="830" y2="2140" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="340" y1="2140" x2="830" y2="2140" stroke="url(#line-h)" stroke-width="1" />
 
   <text x="585" y="2230" font-size="36" text-anchor="middle" fill="#e3f2fd" font-family="serif" letter-spacing="0.15em" opacity="0.85">心和則氣和 氣和則運開</text>
   <text x="585" y="2285" font-size="22" text-anchor="middle" fill="rgba(66, 165, 245, 0.7)" font-family="sans-serif">마음이 고르면 기운이 고르고, 기운이 고르면 운이 열린다</text>
@@ -68,5 +94,5 @@
   <text x="585" y="2400" font-size="36" text-anchor="middle" fill="#42a5f5" font-family="serif" opacity="0.7">사주풀이</text>
 
   <!-- Bottom line -->
-  <line x1="280" y1="2480" x2="890" y2="2480" stroke="#42a5f5" stroke-opacity="0.15" stroke-width="1" />
+  <line x1="280" y1="2480" x2="890" y2="2480" stroke="url(#line-h)" stroke-width="1" />
 </svg>
